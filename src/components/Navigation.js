@@ -27,6 +27,7 @@ const Navigation = () => {
           <img
             width={100}
             src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png"
+            alt="error"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -40,11 +41,32 @@ const Navigation = () => {
               Home
             </Link>
             <Link
-              to="/movies"
               className="nav-item"
               style={{ marginLeft: "25px" }}
+              onClick={() => alert("죄송합니다. 서비스 준비 중 입니다.")}
+            >
+              Series
+            </Link>
+            <Link
+              className="nav-item"
+              style={{ marginLeft: "25px" }}
+              onClick={() => alert("죄송합니다. 서비스 준비 중 입니다.")}
             >
               Movies
+            </Link>
+            <Link
+              className="nav-item"
+              style={{ marginLeft: "25px" }}
+              onClick={() => alert("죄송합니다. 서비스 준비 중 입니다.")}
+            >
+              Latest
+            </Link>
+            <Link
+              className="nav-item"
+              style={{ marginLeft: "25px" }}
+              onClick={() => alert("죄송합니다. 서비스 준비 중 입니다.")}
+            >
+              My List
             </Link>
           </Nav>
           <Form className="d-flex">

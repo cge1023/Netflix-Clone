@@ -46,6 +46,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.card:hover{
+  cursor: pointer;
+}
 .overlay {
   opacity: 0;
   color: white;
@@ -80,4 +83,21 @@
   font-weight: bolder;
   color: white;
   text-align: center;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+.poster {
+  background-image: url("https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg");
+  width: 40%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.divider{
+  height: 1px;
+  background-color: white;
 }
