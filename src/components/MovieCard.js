@@ -7,9 +7,14 @@ const MovieCard = ({ item }) => {
   const { genreList } = useSelector((state) => state.movie);
   let navigate = useNavigate();
   console.log(item);
+  console.log("genreList : ", genreList);
 
   const clickedMovieCard = () => {
-    navigate(`/movies/${item.id}`);
+    navigate(`/movies/${item.id}`, {
+      state: {
+        item: item,
+      },
+    });
   };
 
   return (

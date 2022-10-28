@@ -18,6 +18,7 @@ function getMovies() {
       const genreApi = api.get(
         `/genre/movie/list?api_key=${API_KEY}&language=en-US`
       );
+
       // api를 동시에 여러개 호출 할 때 -> Promise.all()
       let [popularMovies, topRatedMovies, upcomingMovies, genreList] =
         await Promise.all([
@@ -27,6 +28,7 @@ function getMovies() {
           genreApi,
         ]);
       console.log("genreList?", genreList);
+
       dispatch({
         type: "GET_MOVIES_SUCCESS",
         payload: {

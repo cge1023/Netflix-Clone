@@ -90,14 +90,30 @@
   color: white;
 }
 .poster {
-  background-image: url("https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg");
   width: 40%;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+.movieInfo .title {
+  font-size: 28px;
+}
 .divider{
   height: 1px;
   background-color: white;
+}
+.movieInfo {
+  width: 40%;
+}
+.movieInfo > div{
+  margin-bottom: 30px;
+}
+.detailInfo > span {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.overview,.review {
+  font-size: 18px;
+  font-weight: bolder;
 }
