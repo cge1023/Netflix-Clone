@@ -70,7 +70,7 @@ const MovieDetail = () => {
           <div>{movie.overview}</div>
           <div className="divider"></div>
           <div className="review">REVIEW</div>
-          {reviews &&
+          {reviews && reviews.length !== 0 ? (
             reviews.map((item) => (
               <>
                 <div style={{ margin: "0", fontWeight: "bolder" }}>
@@ -79,7 +79,10 @@ const MovieDetail = () => {
                 <div>{item.content}</div>
                 <div className="divider"></div>
               </>
-            ))}
+            ))
+          ) : (
+            <div>No reviews yet</div>
+          )}
         </div>
       </div>
     </>
