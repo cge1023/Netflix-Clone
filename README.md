@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# [React] Netflix 개인 프로젝트
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🖥️ 프로젝트 소개
+React 심화학습을 위해 Netflix 개인 클론 프로젝트를 진행하였습니다.
+<br>
 
-## Available Scripts
+## 🕰️ 개발 기간
+* 22.10.13일 - 22.10.18일
 
-In the project directory, you can run:
+### ⚙️ 개발 환경
+- `JavaScript`
+- `JSX`
+- `React`
+- `Redux`
+- `React Bootstrap`
 
-### `npm start`
+## 📌 주요 기능
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### 메인 페이지 
+- The Movie Database에서 제공하는 Open API를 사용하였습니다.
+- react-multi-carousel 라이브러리를 사용해 메인페이지 뷰를 구성하였습니다.
+- 데이터가 도착하기 전에 사용자의 편의를 위해서 로딩 스피너를 띄워주었습니다.
+- 영화 카드 마우스 오버 시, 영화의 부가 정보를 표시해주었습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Search 페이지
+- useSearchParams를 이용해 검색어를 추출하고 해당 검색어를 포함한 영화제목을 가진 영화들을 Search 페이지에 나열해주었습니다.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### MovieDetail 페이지 
+- 메인페이지에서 특정 영화를 선택 시, 해당 영화 디테일을 보여주는 MovieDetail 페이지로 이동 합니다. 
+- 페이지 이동 시, 선택된 영화의 정보를 넘겨주기 위하여 navigate의 state 옵션과 useLocation을 사용하였습니다.
+- 이 때, ~/movies/:id 형식으로 영화 고유 id를 params로 넘겨줌으로써 영화들을 구분지어 주었습니다.
