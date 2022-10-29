@@ -1,5 +1,9 @@
 # [React] Netflix 개인 프로젝트
 
+<p align="center">
+  <img width="1512" alt="Screen Shot 2022-10-28 at 4 15 52 PM" src="https://user-images.githubusercontent.com/101104214/198829494-5a9773f3-0ab9-4958-b74b-685c2dec8f9a.png">
+</p>
+
 ## 🖥️ 프로젝트 소개
 React 심화학습을 위해 Netflix 개인 클론 프로젝트를 진행하였습니다.
 <br>
